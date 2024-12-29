@@ -1,12 +1,8 @@
-from util import async_timed
+import asyncio
+import time
+from asyncio import CancelledError, Future
 import requests
 from util import async_timed, delay
-import time
-from asyncio import Future
-from asyncio import CancelledError
-import asyncio
-from util import delay
-
 
 # пример демонстрирующий блокировку
 # при исползовании async и await

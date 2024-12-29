@@ -6,4 +6,6 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "aiohttp>=3.11.11",
+    "asyncpg>=0.30.0",
+    "requests>=2.32.3",
 ]
