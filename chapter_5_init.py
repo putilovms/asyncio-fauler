@@ -8,7 +8,7 @@ from db import const
 
 
 def load_common_words() -> List[str]:
-    with open('db/data/common_words.txt') as common_words:
+    with open('data/common_words.txt') as common_words:
         return common_words.readlines()
 
 
