@@ -1,3 +1,5 @@
+# Chapter 5
+
 DB = {
     'host': '127.0.0.1',
     'port': 5432,
@@ -72,3 +74,61 @@ DROP_TABLES = \
     DROP TABLE IF EXISTS product CASCADE;
     DROP TABLE IF EXISTS brand CASCADE;
     """
+
+# Chapter 10
+
+DB_CART = {
+    'host': '127.0.0.1',
+    'port': 5432,
+    'user': 'mickle',
+    'password': '1234',
+    'database': 'cart',
+}
+
+DB_FAVORITES = {
+    'host': '127.0.0.1',
+    'port': 5432,
+    'user': 'mickle',
+    'password': '1234',
+    'database': 'favorites',
+}
+
+DROP_CART = '''
+    DROP TABLE IF EXISTS user_cart CASCADE;
+    '''
+
+DROP_FAVORITE = '''
+    DROP TABLE IF EXISTS user_favorite CASCADE;
+    '''
+
+USER_CART_CREATE = '''
+    CREATE TABLE user_cart (
+        user_id INT NOT NULL,
+        product_id INT NOT NULL
+    );
+    '''
+
+USER_CART_INSERT = '''
+    INSERT INTO user_cart VALUES (1, 1);
+    INSERT INTO user_cart VALUES (1, 2);
+    INSERT INTO user_cart VALUES (1, 3);
+    INSERT INTO user_cart VALUES (2, 1);
+    INSERT INTO user_cart VALUES (2, 2);
+    INSERT INTO user_cart VALUES (2, 5);
+    '''
+
+USER_FAVORITE_CREATE = '''
+    CREATE TABLE user_favorite (
+        user_id INT NOT NULL,
+        product_id INT NOT NULL
+    );
+    '''
+
+USER_FAVORITE_INSERT = '''
+    INSERT INTO user_favorite VALUES (1, 1);
+    INSERT INTO user_favorite VALUES (1, 2);
+    INSERT INTO user_favorite VALUES (1, 3);
+    INSERT INTO user_favorite VALUES (3, 1);
+    INSERT INTO user_favorite VALUES (3, 2);
+    INSERT INTO user_favorite VALUES (3, 3);
+    '''
