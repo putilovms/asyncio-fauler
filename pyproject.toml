@@ -7,6 +7,12 @@ requires-python = ">=3.10"
 dependencies = [
     "aiohttp>=3.11.11",
     "asyncpg>=0.30.0",
+    "django-admin>=2.0.2",
+    "django>=5.1.4",
     "numpy>=2.2.1",
     "requests>=2.32.3",
+    "starlette>=0.45.2",
+    "uvicorn>=0.34.0",
+    "websockets>=14.1",
+    "gunicorn>=23.0.0",
 ]
