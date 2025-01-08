@@ -15,4 +15,5 @@ dependencies = [
     "uvicorn>=0.34.0",
     "websockets>=14.1",
     "gunicorn>=23.0.0",
+    "beautifulsoup4>=4.12.3",
 ]
