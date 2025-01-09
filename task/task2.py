@@ -16,7 +16,6 @@ async def main():
         [task.cancel() for task in broken]
         print(f'Прервано задач - {len(broken)} шт')
 
-            
     print(f'Заняло {time.time() - start:.1f} с')
 
 
